@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        id="bottom-row-landing"
+        id='bottom-row-landing'
         className="h-1/2 border-2 border-slate-700 m-2 p-3"
       >
         My Other Things Go Here
