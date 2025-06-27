@@ -7,3 +7,5 @@
 # Ignore JSON files at root only
 /*.json
 
+# Document files... Why would I need to check them?
+*.md
