@@ -1,2 +1,5 @@
 # Ignore YAML files
 *.yaml
+
+# Ignore config files
+*.config.*
