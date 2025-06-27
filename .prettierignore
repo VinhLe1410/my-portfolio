@@ -3,3 +3,7 @@
 
 # Ignore config files
 *.config.*
+
+# Ignore JSON files at root only
+/*.json
+
