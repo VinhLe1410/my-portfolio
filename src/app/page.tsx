@@ -1,7 +1,9 @@
+import Intro from "@/components/page-components/intro";
+
 export default function Home() {
   return (
-    <div className="h-dvh flex justify-center items-center">
-      WORK IN PROGRESS
-    </div>
+    <main className="">
+      <Intro/>
+    </main>
   );
 }
