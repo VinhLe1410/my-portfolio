@@ -1,8 +1,7 @@
-'use client'
+'use client';
 
-import React from "react";
-import { motion } from "motion/react";
-
+import React from 'react';
+import { motion } from 'motion/react';
 
 export default function Intro() {
   return (
@@ -12,16 +11,14 @@ export default function Intro() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-            type: "tween",
-            duration: 0.2
+            type: 'tween',
+            duration: 0.2,
           }}
         >
           The briefing should show up here in this section.
         </motion.div>
       </div>
-      <div id="intro-links">
-        {/* TODO */}
-      </div>
+      <div id="intro-links">{/* TODO */}</div>
     </section>
-  )
+  );
 }

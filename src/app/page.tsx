@@ -1,9 +1,9 @@
-import Intro from "@/components/page-components/intro";
+import Intro from '@/components/page-components/intro';
 
 export default function Home() {
   return (
     <main className="">
-      <Intro/>
+      <Intro />
     </main>
   );
 }
