@@ -11,11 +11,13 @@ export default function About() {
         Science, I have a strong interest in full-stack development and web
         development.
       </p>
-      <div id="about-technologies" className="flex flex-row">
-        <div id="about-technologies-selector" className="flex flex-col">
+      <div id="about-technologies" className="flex flex-row gap-2">
+        <div id="about-technologies-selector">
           {technologies.map((technology) => (
-            <div key={technology.category} className="flex flex-row">
-              <a>{technology.category}</a>
+            <div key={technology.category} className="m-1">
+              <button className="py-3 bg-gray-100 border border-black/10 text-gray-950 rounded-full w-64 whitespace-nowrap">
+                {technology.category}
+              </button>
             </div>
           ))}
         </div>
