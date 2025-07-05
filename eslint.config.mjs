@@ -15,6 +15,13 @@ const eslintConfig = [
     'next/typescript',
     'plugin:prettier/recommended'
   ),
+  {
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+      'no-unused-vars': 'warn',
+      'react/no-unescaped-entities': ['error', { 'forbid': ['>', '"'] }],
+    },
+  },
 ];
 
 export default eslintConfig;

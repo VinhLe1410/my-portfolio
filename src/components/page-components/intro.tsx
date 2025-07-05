@@ -8,8 +8,8 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
   return (
-    <section>
-      <div id="intro-briefing" className="flex items-center justify-center p-2">
+    <section id="intro">
+      <div className="flex items-center justify-center p-2">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -38,10 +38,7 @@ export default function Intro() {
           </p>
         </motion.div>
       </div>
-      <div
-        id="intro-links"
-        className="flex flex-row gap-2 items-center justify-center text-lg"
-      >
+      <div className="flex flex-row gap-2 items-center justify-center text-lg">
         <Link
           href="#contact"
           className="bg-gray-950 text-white px-6 py-3 rounded-4xl flex items-center gap-2
