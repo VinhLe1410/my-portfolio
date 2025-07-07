@@ -33,7 +33,7 @@ export default function Skills() {
                           focus:scale-110 focus:bg-gray-950 focus:text-white hover:scale-110 active:scale-105
                           transition cursor-pointer ${
                             skill.category === category
-                              ? 'bg-gray-950 text-white'
+                              ? 'bg-gray-950 text-white scale-110'
                               : ''
                           }`}
               onClick={() => filterCategory(skill.category)}

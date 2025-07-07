@@ -9,7 +9,7 @@ export const links = [
   },
 ] as const; // Explicitly defined value, read-only
 
-export const technologies = [
+export const skills = [
   {
     category: 'Frontend',
     items: ['HTML', 'NEXT.js', 'Vue.js', 'React', 'React Native', 'Expo'],
