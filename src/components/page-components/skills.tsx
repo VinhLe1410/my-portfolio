@@ -2,17 +2,15 @@
 
 import React from 'react';
 import { useState, useMemo } from 'react';
-import { technologies } from '@/lib/data';
+import { skills } from '@/lib/data';
 
 export default function Skills() {
   const [category, setCategory] = useState<string>('Frontend');
 
   // Automatically compute displayed technologies when category changes
-  const displayedTech = useMemo(() => {
-    const foundTechnology = technologies.find(
-      (technology) => technology.category === category
-    );
-    return foundTechnology ? [...foundTechnology.items] : [];
+  const displayedSkills = useMemo(() => {
+    const foundSkills = skills.find((skill) => skill.category === category);
+    return foundSkills ? [...foundSkills.items] : [];
   }, [category]);
 
   function filterCategory(selectedCategory: string) {
@@ -27,34 +25,34 @@ export default function Skills() {
     >
       <div className="flex flex-row">
         <div className="w-75 flex-none flex flex-col m-4">
-          {technologies.map((technology) => (
+          {skills.map((skill) => (
             <button
-              key={technology.category}
+              key={skill.category}
               className={`bg-gray-100 border border-black/10 m-1 py-3 rounded-full
                           items-center justify-center
                           focus:scale-110 focus:bg-gray-950 focus:text-white hover:scale-110 active:scale-105
                           transition cursor-pointer ${
-                            technology.category === category
+                            skill.category === category
                               ? 'bg-gray-950 text-white'
                               : ''
                           }`}
-              onClick={() => filterCategory(technology.category)}
+              onClick={() => filterCategory(skill.category)}
             >
-              {technology.category}
+              {skill.category}
             </button>
           ))}
         </div>
         <div className="flex-1">
           <div className="flex flex-row">
-            {displayedTech.map((tech) => (
+            {displayedSkills.map((skill) => (
               <div
-                key={tech}
+                key={skill}
                 className="bg-gray-100 border border-black/10 m-1 py-3 px-7 rounded-full
                           items-center justify-center
                           focus:scale-110 focus:bg-gray-950 focus:text-white hover:scale-110 active:scale-105
                           transition cursor-pointer"
               >
-                {tech}
+                {skill}
               </div>
             ))}
           </div>
