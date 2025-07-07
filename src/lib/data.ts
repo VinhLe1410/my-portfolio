@@ -36,7 +36,7 @@ export const skills = [
   },
   {
     category: 'Version Control',
-    items: ['Git', 'GitHub', 'GitLab'],
+    items: ['Git', 'GitHub'],
   },
   {
     category: 'DevOps Platform(s)',
