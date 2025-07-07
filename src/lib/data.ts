@@ -1,31 +1,11 @@
 export const links = [
   {
-    name: 'Home',
-    hash: '#home',
-  },
-  {
-    name: 'About',
-    hash: '#about',
+    name: 'Intro',
+    hash: '#intro',
   },
   {
     name: 'Skills',
     hash: '#skills',
-  },
-  {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
-    name: 'Education',
-    hash: '#education',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
   },
 ] as const; // Explicitly defined value, read-only
 

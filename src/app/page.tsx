@@ -1,11 +1,11 @@
 import Intro from '@/components/page-components/intro';
-import About from '@/components/page-components/about';
+import Skills from '@/components/page-components/skills';
 
 export default function Home() {
   return (
     <main className="p-1">
       <Intro />
-      <About />
+      <Skills />
     </main>
   );
 }
